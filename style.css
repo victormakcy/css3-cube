@@ -1,0 +1,45 @@
+#wrapper {
+	-webkit-perspective: 1450;
+  -webkit-perspective-origin: 15% 40%;
+}
+
+#cube {
+  position: relative;
+  margin: 200px auto;
+  height: 300px;
+  width: 300px;
+  -webkit-transition: -webkit-transform 2s linear;
+  -webkit-transform-style: preserve-3d;
+}
+
+.face {
+	position: absolute;
+	height:300px;
+	width:300px;
+	padding:20px;
+	background-color: rgba(50, 50, 50, 0.7);
+}
+
+#cube .one  {
+  -webkit-transform: rotateX(90deg) translateZ(169px);
+}
+
+#cube .two {
+  -webkit-transform: translateZ(168px);
+}
+
+#cube .three {
+  -webkit-transform: rotateY(90deg) translateZ(170px);
+}
+
+#cube .four {
+  -webkit-transform: rotateY(180deg) translateZ(169px);
+}
+
+#cube .five {
+  -webkit-transform: rotateY(-90deg) translateZ(170px);
+}
+
+#cube .six {
+  -webkit-transform: rotateX(-90deg) translateZ(169px);
+}
